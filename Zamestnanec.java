@@ -1,12 +1,12 @@
 public class Zamestnanec {
     String meno;
     int vek;
-    int id;
-    public Zamestnanec(String meno, int vek, int id)
+    int plat;
+    public Zamestnanec(String meno, int vek, int plat)
     {
         this.meno = meno;
         this.vek = vek;
-        this.id = id;
+        this.plat = plat;
     }
 
     public String getMeno() {
@@ -25,12 +25,12 @@ public class Zamestnanec {
         this.vek = vek;
     }
 
-    public int getId() {
-        return id;
+    public int getPlat() {
+        return plat;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPlat(int plat) {
+        this.plat = plat;
     }
 
 

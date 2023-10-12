@@ -1,5 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
+    private Zamestnanec z01,z02,z03,z04;
+
+    public void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
 
        /* Uloha1.mrgString();
         Uloha1.lngtString();
@@ -13,7 +19,14 @@ public class Main {
         Uloha2.rplcString();
         Uloha2.palindrom();*/
 
-        Zamestnanec z01 = new Zamestnanec("Michal",20,0001);
-
+        System.out.println("Zadaj meno: ");
+        String meno = scanner.nextLine();
+        System.out.println("Zadaj vek: ");
+        int vek = Integer.parseInt(scanner.nextLine());
+        System.out.println("Zadaj plat: ");
+        int plat = Integer.parseInt(scanner.nextLine());
+        this.z01.setMeno(meno);
+        this.z01.setVek(vek);
+        this.z01.setPlat(plat);
     }
 }
