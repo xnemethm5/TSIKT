@@ -7,7 +7,7 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
-       /* Uloha1.mrgString();
+       Uloha1.mrgString();
         Uloha1.lngtString();
         Uloha1.iseqlString();
         Uloha1.searchString();
@@ -17,9 +17,9 @@ public class Main {
         Uloha2.spaceRemove();
         Uloha2.strToWord();
         Uloha2.rplcString();
-        Uloha2.palindrom();*/
+        Uloha2.palindrom();
 
-        System.out.println("Zadaj meno: ");
+        /*System.out.println("Zadaj meno: ");
         String meno = scanner.nextLine();
         System.out.println("Zadaj vek: ");
         int vek = Integer.parseInt(scanner.nextLine());
@@ -27,6 +27,6 @@ public class Main {
         int plat = Integer.parseInt(scanner.nextLine());
         this.z01.setMeno(meno);
         this.z01.setVek(vek);
-        this.z01.setPlat(plat);
+        this.z01.setPlat(plat);*/
     }
 }
