@@ -1,13 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    private Zamestnanec z01,z02,z03,z04;
-
-    public void main(String[] args) {
-
+    public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
-       Uloha1.mrgString();
+        Uloha1.mrgString();
         Uloha1.lngtString();
         Uloha1.iseqlString();
         Uloha1.searchString();
@@ -19,14 +15,23 @@ public class Main {
         Uloha2.rplcString();
         Uloha2.palindrom();
 
-        /*System.out.println("Zadaj meno: ");
-        String meno = scanner.nextLine();
-        System.out.println("Zadaj vek: ");
-        int vek = Integer.parseInt(scanner.nextLine());
-        System.out.println("Zadaj plat: ");
-        int plat = Integer.parseInt(scanner.nextLine());
-        this.z01.setMeno(meno);
-        this.z01.setVek(vek);
-        this.z01.setPlat(plat);*/
+        Zamestnanec[] zamestnanci = new Zamestnanec[2];
+
+        for(int i = 0 ; i < 2; i++) {
+            System.out.println("Zadaj meno pre zamestnanca " + (i + 1) + ": ");
+            String meno = scanner.nextLine();
+            System.out.println("Zadaj vek pre zamestnanca " + (i + 1) + ": ");
+            int vek = scanner.nextInt();
+            System.out.println("Zadaj plat pre zamestnanca " + (i + 1) + ": ");
+            int plat = scanner.nextInt();
+            scanner.nextLine();
+
+            zamestnanci[i] = new Zamestnanec(meno, vek, plat);
+
+        }
+        System.out.println("Zamestnanci:");
+        for (Zamestnanec z : zamestnanci) {
+            System.out.println("Meno: " + z.getMeno() + ", Vek: " + z.getVek() + " ,Plat: " + z.getPlat());
+        }
     }
 }
